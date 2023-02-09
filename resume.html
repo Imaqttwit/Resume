@@ -2,34 +2,40 @@
 <html>
 <head>
   <title>Alanis Resume</title>
+  <link rel="stylesheet" href="resumestyle1.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <img src="twit pic 2x2.jpg" alt="2x2pic" width="150px">
-  <h3>
-    Jogen John Daniel B. Alanis. Jr.
-  </h3>
-  <p>
-    51 Jacob St. Bagumbayan Sur Naga City
-  </p>
-  <p>
-    0916-535-3531
-  </p>
-    <a href="twitalanis@gmail.com">twitalanis@gmail.com</a>.<br>
-    <a href="https:/www.facebook.com/twit.alanis">https:/www.facebook.com/twit.alanis</a>.<br>
-  </p>
+  <section class="header">
+    <img src="twit pic 2x2.jpg" class="profilepic" width="175px">
+    <h2>
+      Jogen John Daniel B. Alanis. Jr.
+    </h2>
+    <p>51 Jacob St. Bagumbayan Sur Naga City</p>
+    <p>0916-535-3531</p>
+    <p>
+        <a href="https:/www.facebook.com/twit.alanis"><img src="final_fb_logo.jpg" style="width:35px; border-radius: 50%;"></a>
+        <a href="twitalanis@gmail.com"><img src="final_gmail_logo.jpg" style="width:35px; border-radius: 50%;"></a>
+    </p>
+  </section>
   <hr>
-    <h4>Short Personal Statement</h4>
-   	<th>To acquire valuable knowledge and skill to complement those that I have l learned from school in an actual job environment. In return, I offer my service and determination to be an asset to your company throughout the duration of my training period. </th>
+    <table class="full-width">
+      <h3>Short Personal Statement</h3>
+       <td>To acquire valuable knowledge and skill to complement those that I have l learned from school in an actual job environment. In return, I offer my service and determination to be an asset to your company throughout the duration of my training period. </td>
+    </table>
   <hr>
-    <h3>EDUCATIONAL ATTAINMENT</h2>
-    <table>
+  <h3>EDUCATIONAL ATTAINMENT</h3>
+  <div class="school flex">
+    <table class="full-width">
       <h3>Tertiary</h3>
       <tr>
       	<th>Ateneo De Naga University</th>
       </tr>
       <tr>
-      	<td>Bachelor of Science in Information Technology
+      	<td>Bachelor of Science in Information Technology</td>
       </tr>
       <tr>
       	<td>July 2019 - Present</td>
@@ -38,13 +44,13 @@
       	<td>Ateneo Ave, Naga, 4400 Camarines Sur</td>
         </tr>
       </table>
-      <table>
+      <table class="full-width">
       <h3>Secondary Level</h3>
       <tr>
       	<th>Aborvitae Plains Montessori Inc.</th>
       </tr>
       <tr>
-      	<td>Accountancy Business and Management(ABM) Strand
+      	<td>Accountancy Business and Management(ABM) Strand</td>
       </tr>
       <tr>
       	<td>2013-2017</td>
@@ -53,16 +59,20 @@
       	<td>Villa Grande Ave, Naga, Camarines Sur</td>
       </tr>
       </table>
+      </div>
+      </div>
       <hr>
         <h3>KEY STRENGTH AND SKILLS</h3>
+        <div class="column">
         <ul>
           <li>Computer Literature MS Applications</li>
           <li>Have a lot of knowledge about Computer from parts to hardware</li>
           <li>Intermediate in C++ Programming can make simple apps</li>
         </ul>
+        </div>
       <hr>
         <h3>TRAININGS AND SEMINARS</h3>
-        <table>
+        <table class="full-width">
           <tr>
             <td>Young Entrepreneurs Fair 2016</td>
           </tr>
@@ -79,25 +89,25 @@
             <td>November 2016</td>
           </tr>
         </table>
-        <table>
+        <table class="full-width">
           <tr>
-            <td>Ramashinta RESORT & SPA</td><br>
+            <td>Ramashinta RESORT & SPA</td><br/>
           </tr>
           <tr>
             <td>Work Immersion</td>
           </tr>
-            <tr>
+          <tr>
             <td>#63 San Felipe Road, Naga City, Peñafrancia Ave, 4400 Camarines Sur</td>
           </tr>
-            <tr>
+          <tr>
             <td>November 2018 - March 2019</td>
           </tr>
-            </table>
+        </table>
           <hr>
-            <table>
+            <table class="full-width">
             <h3>CHARACTER REFERENCES</h3>
             <tr>
-            	<td>A</td>
+            	<td>Ms. Maricel Fornalez</td>
           	</tr>
             <tr>
             	<td>A</td>
@@ -105,9 +115,19 @@
             </table>
           <hr>
             <table>
-              <h3> CONTACT ME </h3>
+              <h3>CONTACT ME</h3>
               <tr>
-                <a href="https://imaqttwit.github.io/Resume/message">Click Here</a>
+                <a href="https://imaqttwit.github.io/Resume/message">
+                <div class="item button-parrot" style="--bg-color: #2c3e50" onclick="window.location='https://imaqttwit.github.io/Resume/message';">
+                  <button>Click Me!
+                    <div class="parrot"></div>
+                    <div class="parrot"></div>
+                    <div class="parrot"></div>
+                    <div class="parrot"></div>
+                    <div class="parrot"></div>
+                    <div class="parrot"></div>
+                  </button>
+                </div>
               </tr>
                 </table>    
 </body>
