@@ -1,0 +1,195 @@
+body {
+    background-image: url(5background.jpg);
+    font-family: 'Press Start 2P';
+}
+.box {
+    position: relative;;
+}
+input{
+    border: solid 5px orange;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: 150ms cubic-bezier(.4, 0, .2, 1);
+}
+label {
+    position: absolute;
+    left: 16px;
+    color: rgb(162, 245, 9);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(.4, 0, .2, 1);
+}
+input:focus{
+    outline: none;
+    border: 4px solid rgb(3, 235, 252);
+}
+input:focus ~ label{
+    transform: translateY(-50%) scale(1);
+    background: rgb(0, 255, 242);
+    padding: 0 0.2em;
+    color: rgb(0, 0, 0);
+}
+textarea{
+    border: solid 5px orange;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: 150ms cubic-bezier(.4, 0, .2, 1);
+}
+label {
+    position: absolute;
+    left: 16px;
+    color: rgb(162, 245, 9);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(.4, 0, .2, 1);
+}
+textarea:focus{
+    outline: none;
+    border: 4px solid rgb(3, 235, 252);
+}
+textarea:focus ~ label{
+    transform: translateY(-50%) scale(1);
+    background: rgb(0, 255, 242);
+    padding: 0 0.2em;
+    color: rgb(0, 0, 0);
+}
+
+.butt {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+  }
+
+.butts{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+.butts:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+  
+.butts:not(hover) {
+    transition: all 1s;
+}
+
+a.button {
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 0.8rem 2rem;
+    font: 18px "Margarine", sans-serif;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+  }
+  
+  .name {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 3rem;
+    padding-top: 4rem;
+    font: 500 14px "Rubik", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  .button-parrot .parrot {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    animation: blink 0.8s infinite;
+    color: transparent;
+  }
+  
+  .button-parrot .parrot:before {
+    content: "Click Me!";
+  }
+  
+  .button-parrot .parrot:nth-child(1) {
+    top: -30px;
+    left: -40px;
+    font: 12px/1 "Margarine", sans-serif;
+    transform: rotate(-20deg);
+    animation-duration: 0.5s;
+  }
+  
+  .button-parrot .parrot:nth-child(2) {
+    font: 12px/1 "Margarine", sans-serif;
+    right: -40px;
+    top: -20px;
+    transform: rotate(15deg);
+    animation-duration: 0.3s;
+  }
+  
+  .button-parrot .parrot:nth-child(3) {
+    font: 16px/1 "Margarine", sans-serif;
+    top: -60px;
+    left: 15px;
+    transform: rotate(10deg);
+    animation-duration: 1s;
+  }
+  
+  .button-parrot .parrot:nth-child(4) {
+    font: 18px/1 "Margarine", sans-serif;
+    top: -70px;
+    left: 95px;
+    transform: rotate(2deg);
+    animation-duration: 0.7s;
+  }
+  
+  .button-parrot .parrot:nth-child(5) {
+    font: 14px/1 "Margarine", sans-serif;
+    top: 80px;
+    left: 105px;
+    transform: rotate(-20deg);
+    animation-duration: 0.8s;
+  }
+  
+  .button-parrot .parrot:nth-child(6) {
+    font: 12px/1 "Margarine", sans-serif;
+    top: 80px;
+    left: 5px;
+    transform: rotate(10deg);
+    animation-duration: 1.2s;
+  }
+  
+  .button-parrot button:hover .parrot:before {
+    content: "Do it!";
+    width: 70px;
+  }
+  
+  @keyframes blink {
+    25%, 75% {
+      color: transparent;
+    }
+  
+    40%, 60% {
+      color: #fff;
+    }
+  }

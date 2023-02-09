@@ -1,0 +1,47 @@
+body {
+    background-image: url("1background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px;
+}
+img {
+    display: block;
+    margin-left: 700px;
+    margin-right: 600px;
+
+    border: 5px solid rgb(76, 201, 159);}
+}
+.profile {
+    color: white;
+}
+p {
+    color: white;
+}
+h3 {
+    color: white;
+    text-align: center;
+}
+h4 {
+    color: white;
+}
+
+table {
+    color: white;
+    text-align: justify;
+}
+ul {
+    color: white;
+    text-align: justify;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
