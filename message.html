@@ -2,22 +2,47 @@
 <html>
 <head>
 	<title>Message ME</title>
+  <link rel="stylesheet" href="messagestyle.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a href="https://imaqttwit.github.io/Resume/resume.html">←BACK</a>
+  <form action="https://imaqttwit.github.io/Resume/resume.html">
+    <button>
+      <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"> <path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path> </svg>
+      <span>Back</span>
+    </button>
+  </form>
   <h1>Drop a Message</h1>
-	<form>
-		<input type="text" name="Name" placeholder="Enter name"/>
+    <section>
+      <form>
+      <div class="input-group">
+        <input type="text"/>
+        <label>Name</label>
+        <br>
+      </div>
+      <div class="input-group">
+        <input type="email"/>
+        <label>Email</label>
+        <br />
+      </div>
+        <textarea type="description" cols="39" rows="20"></textarea>
+        <label>Your message here...</label>
+      </form>
+    </section>
+      <button class="butt" onclick="submit()">
+        <span class="butts">
+          Submit
+        </span>
+      </button>
+      <button class="butt" onclick="reset()">
+        <span class="butts">
+          Reset
+        </span>
+      </button>
     <br>
-
-	<input type="email" name="email"placeholder="Enter email address" />
-	<br />
-	<textarea name="description" cols="30" rows="10" placeholder="Your message here..."></textarea>
-	</form>
-      <button type="submit" name="submit" onclick="submit()">Submit</button>
-      <button type="reset" name="reset" onclick="reset()">Reset</button>
-    <br>
-      <a href="https://www.facebook.com/twit.alanis">Facebook</a>
-      <a href="https://github.com/Imaqttwit">Github</a>
+      <a href="https://www.facebook.com/twit.alanis" style="color: aqua;">Facebook</a>
+      <a href="https://github.com/Imaqttwit" style="color: aqua;">Github</a>
 </body>
 </html>
